@@ -1,5 +1,5 @@
 import dbConnect from "../../../../lib/mongoose";
-import Brand from "../../../../models/Brand";
+import Brand from "../../../../models/Partner";
 export async function PUT(request, { params }) {
     try {
         await dbConnect();
