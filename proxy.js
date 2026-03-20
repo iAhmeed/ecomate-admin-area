@@ -1,6 +1,6 @@
 import { jwtVerify, SignJWT } from "jose";
 import { NextResponse } from "next/server";
-export default async function middleware(req) {
+export default async function proxy(req) {
     try {
         let cookie;
         cookie = req.cookies.get("session")?.value;
